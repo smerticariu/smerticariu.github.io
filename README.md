@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Battery Guard — website
 
-## Getting Started
+Marketing & download site for **Battery Guard**, the macOS battery app. Built with
+Next.js (App Router) + TypeScript + Tailwind CSS v4, and exported as a fully static
+site so it can be hosted anywhere — including the same box that serves the `.dmg`.
 
-First, run the development server:
+Visual direction: energetic lime-on-dark, mono numerals for stats.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Develop
+
+```sh
+npm install
+npm run dev          # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build (static export)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run build        # outputs a static site to ./out
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`next.config.ts` sets `output: "export"`, so `next build` produces a plain
+HTML/CSS/JS site in `out/` with no server required. Deploy `out/` to GitHub Pages,
+Netlify, Cloudflare Pages, S3 + CloudFront, or any static host.
 
-## Learn More
+> Note: this project lives inside the `native_apps` workspace next to the app repo.
+> Run npm/next commands from **this** directory (`battery-guard-web`) — running them
+> from inside `node_modules` will pick up the wrong `package.json`.
 
-To learn more about Next.js, take a look at the following resources:
+## Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+app/
+  layout.tsx              Root layout: fonts, global metadata, header/footer
+  page.tsx                Homepage (hero, problem/solution, features, use cases,
+                          testimonials, developer, pricing, FAQ, CTA)
+  why/                    Why Battery Guard
+  features/               Features index
+  features/[slug]/        Per-feature landing pages (static-generated)
+  use-cases/              Use cases
+  pricing/                Pricing (one-time tiers + pricing FAQ)
+  faq/                    Full FAQ
+  download/               Download — direct DMG / App Store / Setapp
+  blog/                   Blog index + posts
+  blog/[slug]/            Blog post (renders Markdown from /content/blog)
+  changelog/              Release history
+  press/                  Press kit (boilerplate, fast facts, brand colors)
+  privacy/ terms/ refund/ Legal pages
+  not-found.tsx           Custom 404
+  sitemap.ts robots.ts    SEO
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+components/               Header, Footer, UI primitives, Icon set, AppPreview,
+                          BatteryRing, PricingCards, FaqList, Testimonials, ...
+content/blog/*.md         Blog posts (frontmatter + Markdown)
+lib/
+  site.ts                 Brand constants, nav, footer, download links
+  content.ts              Features, use cases, testimonials, pricing, FAQ data
+  blog.ts                 Filesystem-backed Markdown blog loader
+```
 
-## Deploy on Vercel
+## Editing content
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Brand / nav / download URLs:** `lib/site.ts` (swap the placeholder DMG, App
+  Store, and Setapp URLs at launch).
+- **Features, pricing, FAQ, testimonials:** `lib/content.ts`.
+- **Blog posts:** add a Markdown file to `content/blog/` with frontmatter
+  (`title`, `description`, `date`, `author`, `tag`). It's picked up automatically.
+- **Changelog:** edit the `releases` array in `app/changelog/page.tsx`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## TODO before launch
+
+- Replace placeholder URLs in `lib/site.ts` (`downloads.*`, `site.url`, `site.email`).
+- Drop a real app screenshot into `public/` and swap the `<AppPreview />` mock in the
+  hero, plus add an Open Graph image.
+- Confirm pricing/tier copy in `lib/content.ts`.
+- Replace placeholder testimonials with real reviews.
