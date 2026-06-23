@@ -9,7 +9,7 @@ import { Icon } from "@/components/Icon";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Battery Guard pricing: a free 14-day trial, then $2.49/mo or $9.99/yr, or a one-time $14.99 Lifetime purchase. All through the Mac App Store.",
+    "Battery Guard pricing: a free 14-day trial, then $2.99/mo or $9.99/yr, or a one-time $14.99 Lifetime purchase. All through the Mac App Store.",
 };
 
 const pricingFaqs = [
@@ -19,7 +19,7 @@ const pricingFaqs = [
   },
   {
     q: "What's the difference between the plans?",
-    a: "Nothing in terms of features — they all unlock everything. Monthly ($2.49) and yearly ($9.99) are subscriptions you can cancel anytime; Lifetime ($14.99) is a one-time purchase that includes future updates.",
+    a: "Nothing in terms of features — they all unlock everything. Monthly ($2.99) and yearly ($9.99) are subscriptions you can cancel anytime; Lifetime ($14.99) is a one-time purchase that includes future updates.",
   },
   {
     q: "Can I use it on more than one Mac?",

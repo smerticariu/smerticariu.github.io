@@ -182,7 +182,7 @@ export type Tier = {
 export const tiers: Tier[] = [
   {
     name: "Monthly",
-    price: "$2.49",
+    price: "$2.99",
     cadence: "per month",
     blurb: "Every Pro feature, billed monthly. Cancel anytime.",
     features: [
@@ -238,7 +238,7 @@ export const faqs: { q: string; a: string }[] = [
   },
   {
     q: "What are the plans?",
-    a: "Every plan unlocks the same Pro features. Choose a monthly ($2.49) or yearly ($9.99) subscription, or a one-time Lifetime purchase ($14.99). All are handled by the App Store.",
+    a: "Every plan unlocks the same Pro features. Choose a monthly ($2.99) or yearly ($9.99) subscription, or a one-time Lifetime purchase ($14.99). All are handled by the App Store.",
   },
   {
     q: "Will it slow down my Mac or drain the battery?",

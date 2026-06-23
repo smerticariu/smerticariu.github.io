@@ -46,7 +46,7 @@ export default function DownloadPage() {
             <p className="mt-5 text-sm leading-relaxed text-muted">
               The fully sandboxed build, distributed and updated by Apple, with
               Family Sharing support. Try every feature free for 14 days, then
-              subscribe ($2.49/mo or $9.99/yr) or buy Lifetime once ($14.99).
+              subscribe ($2.99/mo or $9.99/yr) or buy Lifetime once ($14.99).
             </p>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {perks.map((p) => (

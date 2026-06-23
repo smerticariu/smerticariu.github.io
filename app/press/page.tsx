@@ -15,7 +15,7 @@ const facts = [
   ["Name", "Battery Guard"],
   ["Category", "macOS utility · menu bar app"],
   ["Platform", site.requirements],
-  ["Price", "Free 14-day trial · $2.49/mo · $9.99/yr · $14.99 Lifetime"],
+  ["Price", "Free 14-day trial · $2.99/mo · $9.99/yr · $14.99 Lifetime"],
   ["Distribution", "Mac App Store"],
   ["Privacy", "100% on-device · no network access · no tracking"],
 ];
