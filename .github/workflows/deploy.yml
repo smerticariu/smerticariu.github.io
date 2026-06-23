@@ -30,10 +30,8 @@ jobs:
         run: npm ci
 
       - name: Build (static export)
-        env:
-          # Serve assets from /<repo>/ on project Pages. For a <user>.github.io
-          # repo this resolves to an empty path automatically.
-          PAGES_BASE_PATH: ${{ github.event.repository.name == format('{0}.github.io', github.repository_owner) && '' || format('/{0}', github.event.repository.name) }}
+        # This repo is the root user-pages site (smerticariu.github.io), so the
+        # site is served from "/" with no base path. PAGES_BASE_PATH stays unset.
         run: npm run build
 
       - name: Upload Pages artifact
