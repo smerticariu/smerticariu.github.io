@@ -10,7 +10,7 @@ export const site = {
   tagline: "The battery app macOS forgot to ship.",
   description:
     "Battery Guard is a native macOS menu bar app for battery health, custom charge alerts, usage insights, and desktop widgets — all computed on-device.",
-  url: "https://batteryguard.app",
+  url: "https://smerticariu.github.io",
   email: "semerticariu@gmail.com",
   // macOS support line shown in the footer and download page.
   requirements: "macOS 13.0 or later · Apple Silicon & Intel",
