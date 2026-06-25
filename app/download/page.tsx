@@ -8,7 +8,7 @@ import { downloads, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Download",
   description:
-    "Download Battery Guard on the Mac App Store. macOS 13+ on Apple Silicon & Intel. Free 14-day trial, everything computed on-device.",
+    "Download Battery Guard on the Mac App Store. macOS 14+ on Apple Silicon & Intel. Free 14-day trial, everything computed on-device.",
 };
 
 const perks = [

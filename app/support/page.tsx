@@ -35,7 +35,7 @@ const supportFaqs = [
   },
   {
     q: "It's not reading my battery correctly — what should I try?",
-    a: "Quit and reopen Battery Guard, and make sure you're on macOS 13.0 or later. Readings come straight from macOS and your hardware; if something still looks off, email us with your Mac model and macOS version.",
+    a: "Quit and reopen Battery Guard, and make sure you're on macOS 14.0 or later. Readings come straight from macOS and your hardware; if something still looks off, email us with your Mac model and macOS version.",
   },
 ];
 

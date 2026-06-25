@@ -1,0 +1,30 @@
+Battery Guard is the native macOS menu bar app that gives your Mac the battery tools Apple never shipped — custom charge alerts, real battery health history, deep usage insights, and desktop widgets. Everything is computed on-device. The app has no network access at all: no accounts, no analytics, no tracking. Nothing ever leaves your Mac.
+
+WHAT YOU GET
+
+• Custom charge alerts — get notified at any battery level you choose, with sound, on-screen position, and a screen-edge glow you can't miss.
+• Battery health, cycles & temperature — charted over time, with a clear replacement forecast so you know where your battery really stands.
+• Usage insights — a charging heatmap plus runtime and standby stats that show how you actually use your Mac.
+• Configurable menu bar icon — show exactly the readout you want, your way.
+• Desktop widgets — small and medium widgets to keep an eye on your battery at a glance.
+• Health certificate & export — generate a PDF battery health certificate and export your data as CSV or JSON.
+• Auto-dismiss macOS's own battery banners — no more pop-ups fighting for your attention.
+
+PRIVATE BY DESIGN
+
+Battery Guard is built in native Swift — no Electron, no web view — so it's light on CPU and energy. It has zero network access, which means there's nothing to collect and nothing to leak. Every reading is computed and stored on your Mac.
+
+TRY IT FREE
+
+Use every feature free for 14 days — no account required. When you're ready, unlock Battery Guard Pro:
+
+• Monthly — $2.99 / month (auto-renewing)
+• Yearly — $9.99 / year (auto-renewing)
+• Lifetime — $14.99 one-time purchase
+
+All three plans unlock the same Pro features. Subscriptions renew automatically until cancelled; manage or cancel anytime in System Settings → Subscriptions. Payment is charged to your Apple Account. A purchase works on all the Macs signed in to your Apple Account.
+
+Terms of Use (EULA): https://smerticariu.github.io/terms/
+Privacy Policy: https://smerticariu.github.io/privacy/
+
+Requires macOS 14.0 or later · Apple Silicon & Intel.

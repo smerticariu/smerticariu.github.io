@@ -230,7 +230,7 @@ export const tiers: Tier[] = [
 export const faqs: { q: string; a: string }[] = [
   {
     q: "Which Macs does Battery Guard support?",
-    a: "Any Mac running macOS 13.0 or later, on both Apple Silicon and Intel.",
+    a: "Any Mac running macOS 14.0 or later, on both Apple Silicon and Intel.",
   },
   {
     q: "How is it better than the built-in battery menu?",

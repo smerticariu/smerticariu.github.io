@@ -13,7 +13,7 @@ export const site = {
   url: "https://smerticariu.github.io",
   email: "semerticariu@gmail.com",
   // macOS support line shown in the footer and download page.
-  requirements: "macOS 13.0 or later · Apple Silicon & Intel",
+  requirements: "macOS 14.0 or later · Apple Silicon & Intel",
   twitter: "@batteryguardapp",
 } as const;
 
