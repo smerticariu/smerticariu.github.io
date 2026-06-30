@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse Duo — Privacy Policy</title>
+<meta name="description" content="Pulse Duo's privacy policy. Your data stays in your own iCloud via Apple CloudKit. No accounts beyond Apple ID, no tracking, no ads, no servers.">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #131019;
+    color: #ECE9F1;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  .brand {
+    display: inline-flex; align-items: center; gap: 12px;
+    text-decoration: none; color: inherit; margin-bottom: 36px;
+  }
+  .mark {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: linear-gradient(135deg, #E84593 0%, #6C5CE7 100%);
+    display: grid; place-items: center; font-size: 22px;
+  }
+  .brand b { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }
+  h1 { font-size: 32px; letter-spacing: -0.02em; margin: 0 0 6px; }
+  .updated { color: #9b94a8; font-size: 14px; margin: 0 0 32px; }
+  h2 { font-size: 19px; margin: 36px 0 10px; letter-spacing: -0.01em; }
+  p, li { color: #C9C4D4; }
+  a { color: #F178B6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { color: #ECE9F1; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  hr { border: none; border-top: 1px solid #2a2535; margin: 40px 0; }
+  footer { color: #8b8499; font-size: 13px; }
+  footer a { color: #b9b2c7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="brand" href="/pulse/support/"><span class="mark">〜</span><b>Pulse Duo</b></a>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: June 29, 2026</p>
+
+  <p>
+    Pulse Duo lets two partners send each other custom haptic patterns — silent taps, no
+    text or chat. It's built on a simple principle: your messages are between the two of
+    you, and they live in your own iCloud, not on our servers. This policy explains
+    exactly what that means.
+  </p>
+
+  <h2>The short version</h2>
+  <p>
+    We don't run any servers, we have no analytics, no ads, and no third-party trackers.
+    Pulse Duo has <strong>no account system of its own</strong> — it uses your Apple ID
+    through Apple's CloudKit. Your patterns and the pulses you exchange are stored in
+    <strong>your own iCloud account</strong>. We, the developer, cannot read them.
+  </p>
+
+  <h2>What Pulse Duo stores, and where</h2>
+  <p>
+    Pulse Duo uses <strong>Apple CloudKit</strong> (iCloud) as its only backend. The following
+    is stored in your iCloud account and shared privately with your partner through
+    Apple's infrastructure:
+  </p>
+  <ul>
+    <li><strong>Your pairing.</strong> A record linking the two partners, identified by your
+      Apple ID's CloudKit user ID (an opaque identifier — not your email or name).</li>
+    <li><strong>Your haptic patterns.</strong> The names, colors, and tap sequences you create.</li>
+    <li><strong>Your pulse history.</strong> A log of pulses sent between you and your partner,
+      with timestamps, shown in the in-app Journal. It contains no message text — only which
+      pattern was sent and when.</li>
+  </ul>
+  <p>
+    This data lives in CloudKit's private and shared databases tied to your Apple ID.
+    Because it's in your iCloud, <strong>the developer has no access to its contents.</strong>
+  </p>
+
+  <h2>Pairing codes</h2>
+  <p>
+    To connect, one partner generates a temporary 6-character invite code. While a code is
+    active, it is stored in CloudKit's public database alongside a link your partner uses to
+    join. It contains no personal information, and it is <strong>deleted once you're paired.</strong>
+  </p>
+
+  <h2>Notifications</h2>
+  <p>
+    Delivering a pulse uses Apple Push Notification service (silent background pushes) to wake
+    the receiving device. These are handled by Apple and carry no readable message content.
+  </p>
+
+  <h2>What we do <em>not</em> do</h2>
+  <ul>
+    <li>No analytics or usage tracking SDKs.</li>
+    <li>No advertising or advertising identifiers.</li>
+    <li>No third-party data sharing or selling — there are no third parties.</li>
+    <li>No custom servers; we operate no backend that can see your data.</li>
+  </ul>
+
+  <h2>Your control &amp; deleting your data</h2>
+  <ul>
+    <li><strong>Disconnect anytime.</strong> Using “Disconnect” in the app ends the pairing and
+      removes the shared data (patterns and pulse history) for that couple.</li>
+    <li><strong>Delete the app</strong> to remove it from your device, and manage or delete the
+      associated iCloud data via <em>Settings → [your name] → iCloud</em> on your device.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>
+    Pulse Duo is a general-purpose app intended for personal use between partners and is not
+    directed at children under 13.
+  </p>
+
+  <h2>Payment</h2>
+  <p>
+    Pulse Duo is free and has no in-app purchases. We never receive any payment information.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes, we'll update the date above and post the new version on this page.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about privacy? Email <a href="mailto:semerticariu@gmail.com">semerticariu@gmail.com</a>.
+  </p>
+
+  <hr>
+  <footer>
+    Pulse Duo · iOS 17+ and watchOS 10+ · <a href="/pulse/support/">Support</a>
+  </footer>
+</div>
+</body>
+</html>
