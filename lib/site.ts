@@ -19,8 +19,8 @@ export const site = {
 
 /** Where the app can be obtained. Swap this for the real URL at launch. */
 export const downloads = {
-  // Mac App Store listing. Replace id000000000 with the real App ID.
-  appStore: "https://apps.apple.com/app/battery-guard/id000000000",
+  // Mac App Store listing.
+  appStore: "https://apps.apple.com/app/batteryguard/id6783060503?mt=12",
 } as const;
 
 /** Primary nav shown in the header. */
