@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JiggleMate — Support</title>
+<meta name="description" content="Get help with JiggleMate, the mouse jiggler and keep-awake app for Mac. Contact support and find quick answers about permissions, modes, schedules, Pro and automation.">
+<link rel="icon" href="/jigglemate/icon.png">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0E1512;
+    color: #E6F2EC;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; margin-bottom: 36px; }
+  .brand img { width: 40px; height: 40px; }
+  .brand b { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }
+  h1 { font-size: 32px; letter-spacing: -0.02em; margin: 0 0 6px; }
+  .lede { color: #B8CCC2; margin: 0 0 28px; }
+  .card { background: #16201B; border: 1px solid #22302A; border-radius: 16px; padding: 26px; text-align: center; margin: 26px 0 40px; }
+  .btn {
+    display: inline-block; margin-top: 6px; padding: 12px 22px; border-radius: 999px;
+    background: linear-gradient(135deg, #34D399 0%, #059669 100%);
+    color: #06281C; font-weight: 600; text-decoration: none;
+  }
+  h2 { font-size: 19px; margin: 32px 0 8px; letter-spacing: -0.01em; }
+  p, li { color: #B8CCC2; }
+  a { color: #6EE7B7; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { color: #E6F2EC; }
+  code { background: #16201B; border: 1px solid #22302A; border-radius: 6px; padding: 1px 6px; font-size: 14px; color: #E6F2EC; }
+  .q { color: #E6F2EC; font-weight: 600; margin: 22px 0 4px; }
+  hr { border: none; border-top: 1px solid #22302A; margin: 40px 0; }
+  footer { color: #7F978B; font-size: 13px; }
+  footer a { color: #A3BFB1; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="brand" href="/jigglemate/"><img src="/jigglemate/icon.png" alt=""><b>JiggleMate</b></a>
+
+  <h1>Help &amp; Support</h1>
+  <p class="lede">
+    Need a hand with JiggleMate? Start with the quick answers below — and if you're still stuck,
+    a real person is one email away.
+  </p>
+
+  <div class="card">
+    <h2 style="margin-top:0">Email support</h2>
+    <p>Questions, bug reports, or ideas — write and you'll hear back, usually within a couple of days.
+      Mentioning your macOS version helps.</p>
+    <a class="btn" href="mailto:semerticariu@gmail.com?subject=JiggleMate%20support">semerticariu@gmail.com</a>
+  </div>
+
+  <h2>Getting started</h2>
+
+  <p class="q">What does JiggleMate do?</p>
+  <p>It keeps your Mac awake and active while you're away from it. It waits until you've been idle for a while,
+    then keeps the Mac active, and stops the instant you touch the mouse or keyboard again.</p>
+
+  <p class="q">Where is the app after I open it?</p>
+  <p>JiggleMate lives in the menu bar (top right of the screen). Click its icon to open the panel; right-click it
+    for quick timers, pause and mode options. The default shortcut <strong>⌃⌘J</strong> turns it on or off from
+    anywhere.</p>
+
+  <p class="q">Does it need any permission?</p>
+  <p>No. Out of the box JiggleMate keeps your Mac awake using standard macOS power management — no permission
+    needed (the panel shows <strong>Keep-awake mode</strong>). To also move the pointer, scroll and press a
+    silent key, allow it under <em>System Settings → Privacy &amp; Security → Accessibility</em>. JiggleMate uses
+    this only to post pointer, scroll and key events; it never reads other apps or what you type.</p>
+
+  <p class="q">I allowed the permission but it still says Keep-awake mode.</p>
+  <p>Open <em>System Settings → Privacy &amp; Security → Accessibility</em>, make sure <strong>JiggleMate</strong> is
+    switched on, then quit and reopen JiggleMate. If it's listed twice (for example after reinstalling), remove both
+    entries with the <strong>–</strong> button and allow it again.</p>
+
+  <h2>Modes &amp; activity</h2>
+
+  <p class="q">What's the difference between Classic, Natural and Silent?</p>
+  <p><strong>Classic</strong> makes a quick small move. <strong>Natural</strong> moves along human-like curves with
+    varied speed and timing, and shifts schedule times by a few minutes each day. <strong>Silent</strong> moves nothing
+    on screen and only sends activity events.</p>
+
+  <p class="q">My chat app still shows me as away.</p>
+  <p>Some apps only count keyboard or scroll activity. Open the panel → <strong>Extra Activity</strong> and turn on
+    <strong>Scroll</strong> and <strong>Key press</strong> (or apply the <strong>Stay Available</strong> preset).
+    In <em>Settings → Diagnostics</em>, use <strong>Test Jiggle</strong> and check that the system idle time drops
+    back to 0 — that is what most apps read. Also make sure the jiggle interval is shorter than the app's own away
+    timeout.</p>
+
+  <p class="q">Will it press keys or click things by accident?</p>
+  <p>The key press uses F18 by default, which has no function on a Mac. Clicks only happen if you turn them on, and only
+    at the positions you choose. JiggleMate pauses whenever you use the mouse or keyboard.</p>
+
+  <h2>Schedules &amp; rules</h2>
+
+  <p class="q">How does the schedule work?</p>
+  <p>JiggleMate starts at the beginning of each time range and stops at the end. If you start or stop it manually,
+    that choice is respected until the next scheduled change. Ranges can run past midnight.</p>
+
+  <p class="q">What are "Only While" rules?</p>
+  <p>They make JiggleMate run only when something is true: chosen apps are running or in front, you're in a call, an
+    external display is connected, the Mac is on power, the CPU is busy or audio is playing. Combine several with
+    <strong>Any</strong> or <strong>All</strong>. Call detection only checks whether the microphone or camera is in use —
+    it never records or opens them.</p>
+
+  <p class="q">Why did it pause by itself?</p>
+  <p>The panel always shows the reason: the screen is locked, a blackout window, a rule isn't met, low battery, Low Power
+    Mode, or the Mac is running hot. You can change each safeguard in <em>Settings → System</em>.</p>
+
+  <h2>Automation</h2>
+
+  <p class="q">Can I control it from Shortcuts, Raycast or scripts?</p>
+  <p>Yes. The Shortcuts app has Start, Stop, Toggle, Pause and Get Status actions, and there's a Focus filter under
+    <em>System Settings → Focus</em>. From Terminal, Raycast or Alfred use the URL scheme, for example
+    <code>open "jigglemate://start?minutes=30&amp;mode=silent"</code>, <code>jigglemate://stop</code>,
+    <code>jigglemate://toggle</code>, <code>jigglemate://pause?minutes=15</code> or <code>jigglemate://resume</code>.</p>
+
+  <h2>Pro &amp; purchases</h2>
+
+  <p class="q">What's free and what's Pro?</p>
+  <p>Classic and Silent modes, timers, auto-stop, a schedule range, an app rule, the shortcut, menu bar icons and all
+    battery safeguards are free forever. <strong>JiggleMate Pro</strong> ($6.99, one-time) adds Natural mode, scroll,
+    key press and click positions, unlimited schedules and blackout windows, full rules and smart triggers, automation
+    and insights. You can try Pro free for 7 days.</p>
+
+  <p class="q">How do I restore my purchase on another Mac?</p>
+  <p>Sign in with the same Apple Account, open <em>Settings</em> in JiggleMate and click <strong>Restore Purchases</strong>.
+    Pro is shared with your Family Sharing group.</p>
+
+  <p class="q">How do I get a refund?</p>
+  <p>Purchases are handled by Apple. Request a refund at
+    <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+  <h2>Other</h2>
+
+  <p class="q">What do I need to run it?</p>
+  <p>A Mac with <strong>Apple silicon</strong> (M1 or later) running <strong>macOS 14 Sonoma or later</strong>.</p>
+
+  <p class="q">How do I start it automatically?</p>
+  <p>Turn on <strong>Launch at login</strong> in <em>Settings → General</em>.</p>
+
+  <p class="q">How do I uninstall it?</p>
+  <p>Quit JiggleMate from its menu, then drag it from Applications to the Trash. Optionally remove it from
+    <em>Privacy &amp; Security → Accessibility</em>.</p>
+
+  <hr>
+  <footer>
+    JiggleMate · macOS 14+ · Apple silicon · <a href="/jigglemate/">Home</a> ·
+    <a href="/jigglemate/privacy/">Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>

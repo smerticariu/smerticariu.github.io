@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JiggleMate — Mouse Jiggler for Mac</title>
+<meta name="description" content="JiggleMate keeps your Mac awake and active while you step away, then steps aside the moment you're back. A native menu bar app for Apple silicon.">
+<link rel="icon" href="/jigglemate/icon.png">
+<meta property="og:title" content="JiggleMate — Mouse Jiggler for Mac">
+<meta property="og:description" content="Keep your Mac awake and active while you step away.">
+<meta property="og:image" content="https://smerticariu.github.io/jigglemate/icon.png">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0E1512;
+    color: #E6F2EC;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 22px 80px; }
+  nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+  .brand img { width: 40px; height: 40px; }
+  .brand b { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }
+  nav .links a { margin-left: 18px; font-size: 15px; }
+  .hero { text-align: center; }
+  .hero img { width: 148px; height: 148px; filter: drop-shadow(0 18px 40px rgba(16, 185, 129, 0.35)); }
+  h1 { font-size: 44px; letter-spacing: -0.03em; line-height: 1.1; margin: 22px 0 12px; }
+  .lede { color: #B8CCC2; font-size: 19px; max-width: 600px; margin: 0 auto 28px; }
+  .btn {
+    display: inline-block; padding: 13px 26px; border-radius: 999px;
+    background: linear-gradient(135deg, #34D399 0%, #059669 100%);
+    color: #06281C; font-weight: 700; text-decoration: none;
+  }
+  .btn.soon { opacity: 0.9; cursor: default; }
+  .meta { color: #8FA79B; font-size: 14px; margin-top: 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 64px 0; }
+  .card { background: #16201B; border: 1px solid #22302A; border-radius: 16px; padding: 22px; }
+  .card .ic { font-size: 22px; }
+  .card h3 { margin: 8px 0 6px; font-size: 17px; letter-spacing: -0.01em; }
+  .card p { margin: 0; color: #B8CCC2; font-size: 15px; }
+  h2 { font-size: 26px; letter-spacing: -0.02em; margin: 56px 0 14px; text-align: center; }
+  .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .plan { background: #16201B; border: 1px solid #22302A; border-radius: 18px; padding: 26px; }
+  .plan.pro { border-color: #10B981; }
+  .plan h3 { margin: 0; font-size: 20px; }
+  .price { font-size: 30px; font-weight: 800; margin: 6px 0 14px; letter-spacing: -0.02em; }
+  .price span { font-size: 15px; font-weight: 500; color: #8FA79B; }
+  ul { padding-left: 20px; margin: 0; }
+  li { color: #B8CCC2; margin: 6px 0; }
+  a { color: #6EE7B7; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { color: #E6F2EC; }
+  hr { border: none; border-top: 1px solid #22302A; margin: 56px 0 28px; }
+  footer { color: #7F978B; font-size: 13px; text-align: center; }
+  footer a { color: #A3BFB1; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="/jigglemate/"><img src="/jigglemate/icon.png" alt=""><b>JiggleMate</b></a>
+    <div class="links"><a href="/jigglemate/support/">Support</a><a href="/jigglemate/privacy/">Privacy</a></div>
+  </nav>
+
+  <section class="hero">
+    <img src="/jigglemate/icon.png" alt="JiggleMate app icon">
+    <h1>Step away.<br>Stay available.</h1>
+    <p class="lede">
+      JiggleMate keeps your Mac awake and active while you grab a coffee, take a call or wait for a long
+      build — and steps aside the moment you touch the mouse or keyboard.
+    </p>
+    <span class="btn soon">Coming soon to the Mac App Store</span>
+    <p class="meta">macOS 14 Sonoma or later · Apple silicon · Free download</p>
+  </section>
+
+  <section class="grid">
+    <div class="card"><div class="ic">💬</div><h3>Stay available</h3>
+      <p>Real activity, so chat and meeting apps keep showing you as available. Silent mode moves nothing on screen.</p></div>
+    <div class="card"><div class="ic">🌙</div><h3>No sleep, no screen saver</h3>
+      <p>Works out of the box as a keep-awake tool — no permission needed. Optional pointer control adds movement.</p></div>
+    <div class="card"><div class="ic">✍️</div><h3>Natural, not robotic</h3>
+      <p>Human-like curved movement with varied speed and timing. Starts only after you've been idle.</p></div>
+    <div class="card"><div class="ic">🗓️</div><h3>Schedules &amp; auto-stop</h3>
+      <p>Multiple time ranges per day, blackout windows, stop at a set time or after a countdown.</p></div>
+    <div class="card"><div class="ic">⚡</div><h3>Smart triggers</h3>
+      <p>Only while chosen apps run, during a call, with an external display, on power, when the CPU is busy or audio plays.</p></div>
+    <div class="card"><div class="ic">⌨️</div><h3>Quick &amp; automatable</h3>
+      <p>One-click timers, a global shortcut, Shortcuts actions, a Focus filter and a URL scheme.</p></div>
+  </section>
+
+  <h2>Simple pricing</h2>
+  <div class="pricing">
+    <div class="plan">
+      <h3>Free</h3>
+      <div class="price">$0 <span>forever</span></div>
+      <ul>
+        <li>Classic and Silent modes</li>
+        <li>Idle-aware start, instant pause when you're back</li>
+        <li>Timers: 15 min, 30 min, 1 h, until a time</li>
+        <li>Auto-stop, one schedule range, one app rule</li>
+        <li>Custom shortcut and menu bar icon</li>
+        <li>Battery, lock-screen and Low Power Mode safeguards</li>
+      </ul>
+    </div>
+    <div class="plan pro">
+      <h3>JiggleMate Pro</h3>
+      <div class="price">$6.99 <span>one-time · lifetime</span></div>
+      <ul>
+        <li>Natural mode</li>
+        <li>Scroll, silent key press and click positions</li>
+        <li>Unlimited schedule ranges and blackout windows</li>
+        <li>Full "Only While" rules and smart triggers</li>
+        <li>Shortcuts, Focus filter and URL scheme</li>
+        <li>Insights history</li>
+      </ul>
+      <p class="meta">Try every Pro feature free for 7 days. No subscription. Free features never move behind the paywall.</p>
+    </div>
+  </div>
+
+  <h2>Private by design</h2>
+  <p style="text-align:center; color:#B8CCC2; max-width:620px; margin:0 auto;">
+    No account, no analytics, no ads and no internet connection. JiggleMate never reads what you type and
+    never looks inside other apps. <a href="/jigglemate/privacy/">Read the privacy policy</a>.
+  </p>
+
+  <hr>
+  <footer>
+    JiggleMate · macOS 14+ · Apple silicon ·
+    <a href="/jigglemate/support/">Support</a> · <a href="/jigglemate/privacy/">Privacy Policy</a> ·
+    <a href="mailto:semerticariu@gmail.com">Contact</a><br>
+    © 2026 Sergiu Merticariu
+  </footer>
+</div>
+</body>
+</html>
