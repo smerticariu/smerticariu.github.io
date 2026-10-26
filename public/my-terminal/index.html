@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Terminal — a native terminal for Mac</title>
+<meta name="description" content="My Terminal is a native macOS terminal with command blocks, a modern input editor and zsh's own completion. Nothing you type or run ever leaves your Mac.">
+<link rel="icon" href="/my-terminal/icon.png">
+<meta property="og:title" content="My Terminal — a native terminal for Mac">
+<meta property="og:description" content="Command blocks, a modern input editor, zsh completion. Nothing leaves your Mac.">
+<meta property="og:image" content="https://smerticariu.github.io/my-terminal/icon.png">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { overflow-x: hidden; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0F1117;
+    color: #E3E6EE;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 22px 80px; }
+  nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+  .brand img { width: 40px; height: 40px; border-radius: 9px; }
+  .brand b { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }
+  nav .links a { margin-left: 18px; font-size: 15px; }
+  .hero { text-align: center; }
+  .hero img { width: 148px; height: 148px; border-radius: 33px; filter: drop-shadow(0 18px 40px rgba(122, 162, 247, 0.35)); }
+  h1 { font-size: 44px; letter-spacing: -0.03em; line-height: 1.1; margin: 22px 0 12px; }
+  .lede { color: #AEB5C6; font-size: 19px; max-width: 620px; margin: 0 auto 28px; }
+  .btn {
+    display: inline-block; padding: 13px 26px; border-radius: 999px;
+    background: linear-gradient(135deg, #8AB4FF 0%, #5B7FE0 100%);
+    color: #0B1020; font-weight: 700; text-decoration: none; font-size: 16px;
+  }
+  .btn:hover { text-decoration: none; filter: brightness(1.06); }
+  .meta { color: #8A92A6; font-size: 14px; margin-top: 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 64px 0; }
+  .card { background: #161A24; border: 1px solid #232838; border-radius: 16px; padding: 22px; }
+  .card .ic { font-size: 22px; }
+  .card h3 { margin: 8px 0 6px; font-size: 17px; letter-spacing: -0.01em; }
+  .card p { margin: 0; color: #AEB5C6; font-size: 15px; }
+  h2 { font-size: 26px; letter-spacing: -0.02em; margin: 56px 0 14px; text-align: center; }
+  .center { text-align: center; color: #AEB5C6; max-width: 640px; margin: 0 auto; }
+  ol { color: #AEB5C6; max-width: 640px; margin: 0 auto; padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: #8AB4FF; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { color: #E3E6EE; }
+  code { background: #161A24; border: 1px solid #232838; border-radius: 6px; padding: 1px 6px; font-size: 14px; color: #E3E6EE; overflow-wrap: anywhere; }
+  hr { border: none; border-top: 1px solid #232838; margin: 56px 0 28px; }
+  footer { color: #7C8498; font-size: 13px; text-align: center; }
+  footer a { color: #A7B0C4; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="/my-terminal/"><img src="/my-terminal/icon.png" alt=""><b>My Terminal</b></a>
+    <div class="links"><a href="/my-terminal/support/">Support</a><a href="/my-terminal/privacy/">Privacy</a></div>
+  </nav>
+
+  <section class="hero">
+    <img src="/my-terminal/icon.png" alt="My Terminal app icon">
+    <h1>Your shell, with blocks.<br>And nothing leaves your Mac.</h1>
+    <p class="lede">
+      My Terminal is a native macOS terminal: every command becomes a block you can copy, rerun or open,
+      you type in a real editor, and Tab gives you zsh's own completions. No account, no cloud, no AI.
+    </p>
+    <a class="btn" href="https://github.com/smerticariu/smerticariu.github.io/releases/download/my-terminal-v1.0/MyTerminal-1.0.dmg">Download for Mac</a>
+    <p class="meta">Version 1.0 · macOS 14 Sonoma or later · Apple silicon and Intel · Free</p>
+  </section>
+
+  <section class="grid">
+    <div class="card"><div class="ic">▦</div><h3>Command blocks</h3>
+      <p>Each command with its output, exit code and duration. Copy the output, run it again, or open it in a searchable window.</p></div>
+    <div class="card"><div class="ic">✎</div><h3>A modern input editor</h3>
+      <p>Click to move the cursor, select with the mouse, several lines with ⇧↩, syntax colours and suggestions from your history.</p></div>
+    <div class="card"><div class="ic">⇥</div><h3>Feels like zsh</h3>
+      <p>Tab uses zsh's own completion (git, kill, ssh, brew…), your aliases, <code>!!</code> and <code>!$</code>, and the zle keys you know.</p></div>
+    <div class="card"><div class="ic">◫</div><h3>Tabs, splits, sidebar</h3>
+      <p>Named and coloured tabs, split panes, a command palette (⇧⌘P), saved workflows, and your window on a global shortcut.</p></div>
+    <div class="card"><div class="ic">↗</div><h3>Clickable output</h3>
+      <p>Click a folder to <code>cd</code> into it, or <code>file.ts:42</code> to open it at that line in your editor.</p></div>
+    <div class="card"><div class="ic">🛡</div><h3>Built for work</h3>
+      <p>Secure keyboard entry at password prompts, paste protection, secrets hidden in output, and red zones for production.</p></div>
+  </section>
+
+  <h2>Private by design</h2>
+  <p class="center">
+    My Terminal has no networking code at all: no account, no analytics, no crash reports, no updates checking
+    in the background, no AI. What you type and what your commands print stay on your Mac.
+    <a href="/my-terminal/privacy/">Read the privacy policy</a>.
+  </p>
+
+  <h2>Install</h2>
+  <ol>
+    <li>Download <strong>MyTerminal-1.0.dmg</strong> and open it.</li>
+    <li>Drag <strong>My Terminal</strong> to <strong>Applications</strong>, then open it from there.</li>
+    <li>If macOS says it can't verify the app, open <strong>System Settings → Privacy &amp; Security</strong> and click
+      <strong>Open Anyway</strong> next to My Terminal. This is needed only once.</li>
+    <li>The first time a command reads your Documents or Desktop, macOS asks once for permission — choose <strong>Allow</strong>.</li>
+  </ol>
+  <p class="center" style="margin-top:14px">The app is signed with an Apple Developer ID; Apple notarization is coming in an update.</p>
+
+  <hr>
+  <footer>
+    My Terminal 1.0 · macOS 14+ ·
+    <a href="/my-terminal/support/">Support</a> · <a href="/my-terminal/privacy/">Privacy Policy</a> ·
+    <a href="mailto:semerticariu@gmail.com?subject=My%20Terminal">Contact</a><br>
+    Terminal engine: <a href="https://github.com/migueldeicaza/SwiftTerm">SwiftTerm</a> (MIT) ·
+    © 2026 Sergiu Merticariu
+  </footer>
+</div>
+</body>
+</html>

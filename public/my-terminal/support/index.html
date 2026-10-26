@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Terminal — Support</title>
+<meta name="description" content="Get help with My Terminal, the native terminal for Mac: install, permissions, shells, completion, shortcuts and contact.">
+<link rel="icon" href="/my-terminal/icon.png">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { overflow-x: hidden; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0F1117;
+    color: #E3E6EE;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; margin-bottom: 36px; }
+  .brand img { width: 40px; height: 40px; border-radius: 9px; }
+  .brand b { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; }
+  h1 { font-size: 32px; letter-spacing: -0.02em; margin: 0 0 6px; }
+  .lede { color: #AEB5C6; margin: 0 0 28px; }
+  .card { background: #161A24; border: 1px solid #232838; border-radius: 16px; padding: 26px; text-align: center; margin: 26px 0 40px; }
+  .btn {
+    display: inline-block; margin-top: 6px; padding: 12px 22px; border-radius: 999px;
+    background: linear-gradient(135deg, #8AB4FF 0%, #5B7FE0 100%);
+    color: #0B1020; font-weight: 600; text-decoration: none;
+  }
+  h2 { font-size: 19px; margin: 32px 0 8px; letter-spacing: -0.01em; }
+  p, li { color: #AEB5C6; }
+  a { color: #8AB4FF; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { color: #E3E6EE; }
+  code, kbd { background: #161A24; border: 1px solid #232838; border-radius: 6px; padding: 1px 6px; font-size: 14px; color: #E3E6EE; overflow-wrap: anywhere; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; }
+  td { border-bottom: 1px solid #232838; padding: 7px 4px; color: #AEB5C6; vertical-align: top; }
+  td:first-child { padding-right: 16px; width: 42%; }
+  kbd { white-space: nowrap; }
+  .q { color: #E3E6EE; font-weight: 600; margin: 22px 0 4px; }
+  hr { border: none; border-top: 1px solid #232838; margin: 40px 0; }
+  footer { color: #7C8498; font-size: 13px; }
+  footer a { color: #A7B0C4; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="brand" href="/my-terminal/"><img src="/my-terminal/icon.png" alt=""><b>My Terminal</b></a>
+
+  <h1>Help &amp; Support</h1>
+  <p class="lede">Quick answers first; if you're still stuck, write and a real person answers.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">Email support</h2>
+    <p>Questions, bug reports or ideas. Mention your macOS version and shell (zsh, bash or fish).
+      Please don't paste secrets, tokens or private code into an email.</p>
+    <a class="btn" href="mailto:semerticariu@gmail.com?subject=My%20Terminal%20support">semerticariu@gmail.com</a>
+  </div>
+
+  <h2>Installing</h2>
+  <p class="q">How do I install it?</p>
+  <p>Open <code>MyTerminal-1.0.dmg</code>, drag <strong>My Terminal</strong> to <strong>Applications</strong> and open it
+    from there. It runs on macOS 14 Sonoma or later, on Apple silicon and Intel Macs.</p>
+  <p class="q">macOS says it "cannot verify" My Terminal.</p>
+  <p>Version 1.0 is signed with a Developer ID but not yet notarized by Apple. Open <strong>System Settings →
+    Privacy &amp; Security</strong>, scroll to the message about My Terminal and click <strong>Open Anyway</strong>.
+    You only need to do this once.</p>
+  <p class="q">macOS asks whether My Terminal may access Documents, Desktop or Downloads.</p>
+  <p>That's macOS protecting those folders; it asks once per folder, the first time a command reads it.
+    Choose <strong>Allow</strong> so <code>ls</code>, <code>git</code> and your tools work there. You can change it later in
+    System Settings → Privacy &amp; Security → Files and Folders.</p>
+  <p class="q">How do I update?</p>
+  <p>Download the new DMG from the <a href="/my-terminal/">My Terminal page</a> and replace the app in Applications.
+    The app never checks for updates on its own — it makes no network connections.</p>
+
+  <h2>Shells and settings</h2>
+  <p class="q">Which shell does it use? Where do my aliases come from?</p>
+  <p>Your login shell, normally zsh, reading your usual files: <code>~/.zshenv</code>, <code>~/.zprofile</code>,
+    <code>~/.zshrc</code> (oh-my-zsh, aliases, PATH). bash and fish work too and can be picked in Settings → General.
+    After editing <code>~/.zshrc</code>, open a new tab or run <code>source ~/.zshrc</code>.</p>
+  <p class="q">I'd rather type straight into the shell.</p>
+  <p>View → Modern Input Editor (<kbd>⇧⌘I</kbd>) switches to classic input. Settings → Input also lets you keep your
+    own shell prompt.</p>
+  <p class="q">Where are the settings stored?</p>
+  <p>Only on your Mac: <code>~/Library/Preferences/dev.smerticariu.myterminal.plist</code>, and workflows and custom
+    themes in <code>~/Library/Application Support/My Terminal</code>.</p>
+
+  <h2>Keyboard shortcuts</h2>
+  <table>
+    <tr><td><kbd>⌘T</kbd> <kbd>⌘W</kbd></td><td>New tab · close pane, then tab</td></tr>
+    <tr><td><kbd>⌘D</kbd> <kbd>⇧⌘D</kbd></td><td>Split right · split down; <kbd>⌥⌘</kbd> + arrows move between panes</td></tr>
+    <tr><td><kbd>⇧⌘↩</kbd></td><td>Zoom the current pane; again to restore the splits</td></tr>
+    <tr><td><kbd>⇧⌘P</kbd></td><td>Command palette: actions, tabs, workflows, history, themes</td></tr>
+    <tr><td><kbd>⌘↑</kbd> <kbd>⌘↓</kbd></td><td>Select previous · next command block</td></tr>
+    <tr><td><kbd>⇧⌘C</kbd> <kbd>⌥⌘C</kbd> <kbd>⇧⌘R</kbd></td><td>Copy output · copy command · run again</td></tr>
+    <tr><td><kbd>Tab</kbd></td><td>Take the grey suggestion a folder at a time, else zsh completion</td></tr>
+    <tr><td><kbd>⌃R</kbd> <kbd>⌥.</kbd></td><td>Search history · insert the last argument</td></tr>
+    <tr><td><kbd>⌘K</kbd> <kbd>⌘F</kbd></td><td>Clear · find</td></tr>
+    <tr><td><kbd>⌘</kbd>+scroll, pinch, <kbd>⌘+</kbd> <kbd>⌘-</kbd> <kbd>⌘0</kbd></td><td>Text size of the output</td></tr>
+    <tr><td><kbd>⌃`</kbd></td><td>Bring your window down over any app; again to hide it</td></tr>
+  </table>
+
+  <h2>Troubleshooting</h2>
+  <p class="q">Commands don't show as blocks.</p>
+  <p>Blocks need the shell integration, which loads automatically for zsh, bash and fish. Other shells (sh, nu…)
+    run in classic mode. If you use a custom <code>ZDOTDIR</code>, make sure it's exported before My Terminal starts.</p>
+  <p class="q">A secret in my output is hidden and I need it.</p>
+  <p>Click the covered text to show it, or right-click → Copy Including Secrets. Turn hiding off in Settings → Security.</p>
+  <p class="q">Tab completes nothing for a command.</p>
+  <p>Argument completion comes from zsh's own completion functions. If zsh itself has none for that tool,
+    My Terminal falls back to files and folders.</p>
+
+  <hr>
+  <footer>
+    <a href="/my-terminal/">My Terminal</a> · <a href="/my-terminal/privacy/">Privacy Policy</a> · © 2026 Sergiu Merticariu
+  </footer>
+</div>
+</body>
+</html>
