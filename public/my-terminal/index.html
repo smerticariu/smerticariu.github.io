@@ -49,6 +49,13 @@
   a { color: #8AB4FF; text-decoration: none; }
   a:hover { text-decoration: underline; }
   strong { color: #E3E6EE; }
+  .brew { display: flex; align-items: center; gap: 10px; max-width: 560px; margin: 14px auto 0; background: #161A24;
+    border: 1px solid #232838; border-radius: 12px; padding: 10px 10px 10px 16px; text-align: left; }
+  .brew code { background: none; border: none; padding: 0; flex: 1; min-width: 0; font-size: 14px; }
+  .brew code::before { content: "$ "; color: #7C8498; }
+  .brew button { flex: none; background: #232838; color: #E3E6EE; border: 1px solid #2E3446; border-radius: 8px;
+    padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+  .brew button:hover { background: #2B3142; }
   code { background: #161A24; border: 1px solid #232838; border-radius: 6px; padding: 1px 6px; font-size: 14px; color: #E3E6EE; overflow-wrap: anywhere; }
   hr { border: none; border-top: 1px solid #232838; margin: 56px 0 28px; }
   footer { color: #7C8498; font-size: 13px; text-align: center; }
@@ -71,6 +78,8 @@
     </p>
     <a class="btn" href="https://github.com/smerticariu/smerticariu.github.io/releases/download/my-terminal-v1.0/MyTerminal-1.0.dmg">Download for Mac</a>
     <p class="meta">Version 1.0 · macOS 14 Sonoma or later · Apple silicon and Intel · Free</p>
+    <p class="meta" style="margin-bottom:0">or with Homebrew:</p>
+    <div class="brew"><code>brew install --cask smerticariu/tap/my-terminal</code><button type="button">Copy</button></div>
   </section>
 
   <section class="grid">
@@ -96,6 +105,9 @@
   </p>
 
   <h2>Install</h2>
+  <p class="center"><strong>With Homebrew</strong> — no download page, and updates with <code style="white-space:nowrap">brew upgrade --cask my-terminal</code>:</p>
+  <div class="brew"><code>brew install --cask smerticariu/tap/my-terminal</code><button type="button">Copy</button></div>
+  <p class="center" style="margin-top:22px"><strong>Or by hand:</strong></p>
   <ol>
     <li>Download <strong>MyTerminal-1.0.dmg</strong> and open it.</li>
     <li>Drag <strong>My Terminal</strong> to <strong>Applications</strong>, then open it from there.</li>
@@ -112,5 +124,14 @@
     © 2026 Sergiu Merticariu
   </footer>
 </div>
+<script>
+  document.querySelectorAll('.brew button').forEach(function (button) {
+    button.addEventListener('click', function () {
+      var text = button.parentElement.querySelector('code').textContent;
+      var done = function () { button.textContent = 'Copied'; setTimeout(function () { button.textContent = 'Copy'; }, 1500); };
+      if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+    });
+  });
+</script>
 </body>
 </html>

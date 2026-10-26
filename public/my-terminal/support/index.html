@@ -61,15 +61,20 @@
 
   <h2>Installing</h2>
   <p class="q">How do I install it?</p>
-  <p>Open <code>MyTerminal-1.0.dmg</code>, drag <strong>My Terminal</strong> to <strong>Applications</strong> and open it
+  <p>With Homebrew: <code>brew install --cask smerticariu/tap/my-terminal</code>.
+    Or open <code>MyTerminal-1.0.dmg</code>, drag <strong>My Terminal</strong> to <strong>Applications</strong> and open it
     from there. It runs on macOS 14 Sonoma or later, on Apple silicon and Intel Macs.</p>
   <p class="q">macOS asks whether My Terminal may access Documents, Desktop or Downloads.</p>
   <p>That's macOS protecting those folders; it asks once per folder, the first time a command reads it.
     Choose <strong>Allow</strong> so <code>ls</code>, <code>git</code> and your tools work there. You can change it later in
     System Settings → Privacy &amp; Security → Files and Folders.</p>
   <p class="q">How do I update?</p>
-  <p>Download the new DMG from the <a href="/my-terminal/">My Terminal page</a> and replace the app in Applications.
+  <p>With Homebrew: <code>brew upgrade --cask my-terminal</code>. Otherwise download the new DMG from the
+    <a href="/my-terminal/">My Terminal page</a> and replace the app in Applications.
     The app never checks for updates on its own — it makes no network connections.</p>
+  <p class="q">How do I uninstall it?</p>
+  <p>Quit it and move it from Applications to the Trash. With Homebrew, <code>brew uninstall --zap --cask my-terminal</code>
+    also removes its settings, saved tabs and command journal.</p>
 
   <h2>Shells and settings</h2>
   <p class="q">Which shell does it use? Where do my aliases come from?</p>
